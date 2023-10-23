@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1JxLy5IWfftf3MD7sfnHgRSJwrgh7nyb3
 """
 
-class ClusteringLayer():
+class ClusteringLayer(Layer):
     '''
     Clustering layer converts input sample (feature) to soft label, i.e. a vector that represents the probability of the
     sample belonging to each cluster. The probability is calculated with student's t-distribution.
