@@ -15,6 +15,7 @@ class ClusteringLayer():
     From: https://github.com/yzzhang/machine-learning/blob/master/deep_learning/unsupervised_learning/dec_keras_clustering/DEC_clustering_for_credit_card_dataset.ipynb
     Paper:  J. Xie, R. Girshick, and A. Farhadi, Unsupervised Deep Embedding for Clustering Analysis, ArXiv:1511.06335v, May 24, 2016
     '''
+    from keras.layers import InputSpec
 
     def __init__(self, n_clusters, weights=None, alpha=1.0, **kwargs):
         if 'input_shape' not in kwargs and 'input_dim' in kwargs:
