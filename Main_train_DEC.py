@@ -1,4 +1,4 @@
-def Main_train_DEC(x, model, target_distribution, past_labels, index_array, maxiter, batch_size, index, loss, update_interval, tol):
+def Main_train_DEC(x, model, past_labels, index_array, maxiter, batch_size, index, loss, update_interval, tol):
     import numpy as np
     for ite in range(int(maxiter)):
         if ite % update_interval == 0:
